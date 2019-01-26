@@ -1,5 +1,3 @@
-#data = '<body class="rf">оара </body>'
-#data = '<html> </html>'
 def brute_force(data):
 	all_indexes = []
 	index = 0
@@ -40,7 +38,6 @@ def replace_pairs(user_tags):
 		open_tag = user_tags[a]
 		close_tag = user_tags[a+1]
 		if '/' + open_tag == close_tag:
-		#if user_tags[a] in user_tags[a+1] and '/' in user_tags[a+1]:
 			user_tags[a] = '-'
 			user_tags[a+1] = '-'
 		a += 1
@@ -106,8 +103,6 @@ def check_double_tags(user_tags):
 	answer = compare_length(whithout_excess_symbols)
 	return answer
 
-#user_tags = delete_excess(data) 
-#print(check_double_tags(user_tags))
 
 
 
